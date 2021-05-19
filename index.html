@@ -121,6 +121,40 @@
 
             <br>
 
+            <br>
+
+            <div class="row" id="job-listings">
+
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <button class="fabjob" onclick="app.jobsController.toggleForm()">+</button>
+                </div>
+                <div class="col-lg-8 m-auto">
+                    <form class="card p-3 shadow d-none" id="house-form" onsubmit="app.jobsController.addJob(event)">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Title" type="text" id="title" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="Business" class="sr-only">Business:</label>
+                            <input class="form-control" type="text" placeholder="Business" id="business" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="price" class="sr-only">Salary:</label>
+                            <input class="form-control" placeholder="Salary" type="number" id="salary" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="img" class="sr-only">Image:</label>
+                            <input class="form-control" placeholder="image" type="text" id="image" />
+                        </div>
+                        <button type="submit">submit form</button>
+                    </form>
+                </div>
+            </div>
+
+
+
 
         </div>
     </main>
