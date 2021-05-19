@@ -28,7 +28,11 @@
                     <button class="btn btn-primary btn-block" onclick="app.carsController.drawCars()">Cars</button>
                 </div>
                 <div class="col-2">
-                    <button class="btn btn-primary btn-block">Houses</button>
+                    <button class="btn btn-primary btn-block"
+                        onclick="app.housesController.drawHouses()">Houses</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary btn-block" onclick="app.jobsController.drawJobs()">Jobs</button>
                 </div>
                 <!-- <div class="col-2"><button class="btn btn-info">Missed Connections Soooon</button></div>
                 <div class="col-2"><button class="btn btn-info"></button></div>
@@ -76,6 +80,46 @@
                     </form> -->
                 </div>
             </div>
+
+            <br>
+            <!--NOTE house-listings-->
+            <div class="row" id="house-listings">
+
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <button class="fabhouse" onclick="app.housesController.toggleForm()">+</button>
+                </div>
+                <div class="col-lg-8 m-auto">
+                    <form class="card p-3 shadow d-none" id="house-form"
+                        onsubmit="app.housesController.addHouse(event)">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Location" type="text" id="location" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="Footage" class="sr-only">Footage:</label>
+                            <input class="form-control" type="number" placeholder="Footage" id="footage" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="price" class="sr-only">Price:</label>
+                            <input class="form-control" placeholder="price" type="number" min="0" id="price" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="color" class="sr-only">Color:</label>
+                            <input class="form-control" placeholder="color" type="color" id="color" />
+                        </div>
+                        <div class="form-group">
+                            <label for="img" class="sr-only">Image:</label>
+                            <input class="form-control" placeholder="image" type="text" id="image" />
+                        </div>
+                        <button type="submit">submit form</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <br>
 
 
         </div>

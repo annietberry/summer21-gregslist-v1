@@ -12,3 +12,33 @@
     place-content: center;
     padding: 1rem;
 }
+
+.fabhouse{
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    border-radius: 50%;
+    background-color: rgb(21, 31, 161);
+    color: rgb(66, 66, 66);
+    z-index: 9;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+}
+
+.fabjob{
+    position: fixed;
+    bottom: 12rem;
+    right: 1rem;
+    border-radius: 50%;
+    background-color: rgb(53, 197, 96);
+    color: rgb(66, 66, 66);
+    z-index: 9;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+}

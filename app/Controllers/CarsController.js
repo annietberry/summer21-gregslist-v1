@@ -2,13 +2,13 @@ import { ProxyState } from "../AppState.js";
 import { carsService } from "../Services/CarsService.js";
 
 export class CarsController {
-    constructor(){
+    constructor() {
         ProxyState.on('cars', this.drawCars)
         this.drawCars()
     }
-    drawCars(){
+    drawCars() {
         let template = ''
-        ProxyState.cars.forEach(car =>{
+        ProxyState.cars.forEach(car => {
             template += /*html */`
             <div class="col-lg-4 listing my-3">
                 <div class="card">
@@ -30,7 +30,7 @@ export class CarsController {
         document.getElementById('listings').innerHTML = template
     }
 
-    addCar(event){
+    addCar(event) {
         event.preventDefault()
         console.log(event)
         let form = event.target
@@ -48,7 +48,7 @@ export class CarsController {
         this.toggleForm()
     }
 
-    toggleForm(){
+    toggleForm() {
         document.getElementById('car-form').classList.toggle('d-none')
     }
 
