@@ -10,5 +10,10 @@ class CarsService {
     }
 }
 
+let res = await pokeApi.get()
+console.log('initial response', res);
+ProxyState.wildPokemon = res.data.results
+console.log('Appstate - wild pokemon', ProxyState.wildPokemon)
+
 // NOTE singleton
 export const carsService = new CarsService()

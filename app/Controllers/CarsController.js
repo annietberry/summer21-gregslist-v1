@@ -6,6 +6,10 @@ export class CarsController {
         ProxyState.on('cars', this.drawCars)
         this.drawCars()
     }
+
+    getCar(){
+        carsService.getCar()
+      }
     drawCars() {
         let template = ''
         ProxyState.cars.forEach(car => {
@@ -51,5 +55,7 @@ export class CarsController {
     toggleForm() {
         document.getElementById('car-form').classList.toggle('d-none')
     }
+
+
 
 }
